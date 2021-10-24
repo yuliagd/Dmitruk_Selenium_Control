@@ -55,6 +55,10 @@ public class PlpLaptopPageSteps extends BaseStep {
         return linkOfRandomPage;
     }
 
+    public void getText (){
+        System.out.println(getLinkOfRandomPage());
+    }
+
     @Steps
     public RandomLaptopPageSteps openRandomPage (){
         driver.get(getLinkOfRandomPage());
